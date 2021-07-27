@@ -16,7 +16,7 @@ def drawcircle(event,x,y,flags,param):
         # cv2.circle(img1,(x,y),100,(255,0,0),3)
         cv2.rectangle(img1,(x,y),(x+100,y+100),(B,G,R),S)
 
-img1 = cv2.imread('./images/test072601.jpg')
+img1 = cv2.imread('messigray1.png')
 
 cv2.namedWindow('image',cv2.WINDOW_AUTOSIZE)
 cv2.setMouseCallback('image',drawcircle)
