@@ -1,1 +1,1 @@
-./images/07060103_.jpg
+mediapipe
