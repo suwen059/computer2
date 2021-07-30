@@ -14,7 +14,7 @@ with mp_selfie_segmentation.SelfieSegmentation(
     image = cv2.imread(file)
     image_height, image_width, _ = image.shape
     # Convert the BGR image to RGB before processing.
-    results = selfie_segmentation.process(cv2.cvtColor(, cv2.COLOR_BGR2RGB))
+    results = selfie_segmentation.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
     # Draw selfie segmentation on the background image.
     # To improve segmentation around boundaries, consider applying a joint
